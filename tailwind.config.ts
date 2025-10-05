@@ -14,7 +14,7 @@ export default {
     },
     extend: {
       fontFamily: {
-        montserrat: ['Montserrat', 'sans-serif'],
+        poppins: ['Poppins', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -46,6 +46,7 @@ export default {
           cyan: "hsl(var(--neon-cyan))",
           yellow: "hsl(var(--neon-yellow))",
           pink: "hsl(var(--neon-pink))",
+          green: "hsl(var(--neon-green))",
         },
         popover: {
           DEFAULT: "hsl(var(--popover))",
@@ -59,6 +60,7 @@ export default {
       backgroundImage: {
         'gradient-hero': 'var(--gradient-hero)',
         'gradient-accent': 'var(--gradient-accent)',
+        'gradient-cool': 'var(--gradient-cool)',
       },
       boxShadow: {
         'glow': 'var(--shadow-glow)',

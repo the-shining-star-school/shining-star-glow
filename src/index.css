@@ -9,47 +9,47 @@ All colors MUST be HSL.
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 0 0% 15%;
+    --foreground: 240 10% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 0 0% 15%;
+    --card-foreground: 240 10% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 15%;
+    --popover-foreground: 240 10% 15%;
 
-    --primary: 0 85% 55%;
+    --primary: 270 95% 60%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 0 0% 98%;
-    --secondary-foreground: 0 0% 15%;
+    --secondary: 280 100% 97%;
+    --secondary-foreground: 240 10% 15%;
 
-    --muted: 0 0% 96%;
-    --muted-foreground: 0 0% 45%;
+    --muted: 280 40% 96%;
+    --muted-foreground: 240 5% 45%;
 
-    --accent: 186 100% 50%;
-    --accent-foreground: 0 0% 15%;
+    --accent: 30 95% 55%;
+    --accent-foreground: 0 0% 100%;
 
     --neon-cyan: 186 100% 50%;
-    --neon-yellow: 52 100% 50%;
+    --neon-yellow: 48 100% 55%;
     --neon-pink: 330 100% 65%;
+    --neon-green: 142 76% 45%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 0 0% 90%;
-    --input: 0 0% 90%;
-    --ring: 0 85% 55%;
+    --border: 280 30% 92%;
+    --input: 280 30% 92%;
+    --ring: 270 95% 60%;
 
-    --radius: 1rem;
+    --radius: 1.5rem;
 
-    --gradient-hero: linear-gradient(135deg, hsl(0 85% 55%), hsl(0 75% 45%));
-    --gradient-accent: linear-gradient(135deg, hsl(186 100% 50%), hsl(52 100% 50%));
-    --shadow-glow: 0 0 40px hsl(0 85% 55% / 0.3);
-    --shadow-card: 0 10px 30px -10px hsl(0 0% 0% / 0.1);
+    --gradient-hero: linear-gradient(135deg, hsl(270 95% 60%), hsl(330 100% 65%));
+    --gradient-accent: linear-gradient(135deg, hsl(30 95% 55%), hsl(48 100% 55%));
+    --gradient-cool: linear-gradient(135deg, hsl(186 100% 50%), hsl(270 95% 60%));
+    --shadow-glow: 0 0 50px hsl(270 95% 60% / 0.4);
+    --shadow-card: 0 15px 40px -15px hsl(270 50% 50% / 0.15);
   }
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
 
 @layer base {
   * {
@@ -57,7 +57,7 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground font-montserrat;
+    @apply bg-background text-foreground font-poppins;
   }
 
   html {
